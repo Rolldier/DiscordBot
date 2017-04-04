@@ -1,0 +1,35 @@
+var Bot = require('Unit1');
+ 
+var bot = new Bot({
+    email: <email>,
+    password: <pass>
+});
+ 
+bot
+    .on(bot.triggers.command, '_New')
+    .do(function(bot, conf, args) {
+        this.reply('Hello! Welcome to SZChat');
+            .on(bot.triggers.command, '_Vampire')
+    .do(function(bot, conf, args) {
+        this.reply('VAMPIRE!!!!!');
+            .on(bot.triggers.command, 'Hi')
+    .do(function(bot, conf, args) {
+        this.reply('Ja ja ja ja ja ja ja ja ja ja ja ja ja ja ja ja');
+            .on(bot.triggers.command, '_PokemonNotSatanic')
+    .do(function(bot, conf, args) {
+        this.reply('NEIN NEIN NEIN NEIN NEIN NEIN');
+            .on(bot.triggers.command, '_trss')
+    .do(function(bot, conf, args) {
+        this.reply('I'm Slim Shady yes im The Real Shady all you other Slim Shadies are just imitating so wont The Real Slim Shady please stand up please stand up');
+            .on(bot.triggers.command, 'SendSwearWords')
+    .do(function(bot, conf, args) {
+        this.reply('SwearWords');
+            .on(bot.triggers.command, '_ChainS')
+    .do(function(bot, conf, args) {
+        this.reply('Joshe Taggert');
+            .on(bot.triggers.command, '_0*0')
+    .do(function(bot, conf, args) {
+        this.reply('You have 0 pizzas and you have to evenly distribute it to 0 people.');
+    });
+ 
+bot.connect();
